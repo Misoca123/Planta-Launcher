@@ -1,15 +1,14 @@
 {
-    "name": "PokeMoonX-Launcher",
-    "preductname": "PokeMoonX Launcher",
-    "version": "2.0.2",
-    "description": "Launcher Mincraft selvania",
+    "name": "Planta-Launcher",
+    "preductname": "Planta Launcher",
+    "version": "1.0.0",
+    "description": "",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, Inc.",
-        "email": "contact@luuxis.fr",
-        "url": "https://github.com/luuxis"
+        "name": "Misoca123",
+        "url": "https://github.com/Misoca123"
     },
-    "url": "http://launcher.luuxis.fr",
+    "url": "http://31.38.2.76:8080/",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
@@ -39,6 +38,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/PokeMoonX/PokeMoonX-Launcher.git"
+        "url": "git+https://github.com/Misoca123/Planta-Launcher.git"
     }
 }

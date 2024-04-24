@@ -2,16 +2,16 @@
     <div class="nav-settings">
         <p>Paramètres</p>
         <div class="nav-box">
-            <div id="account" class="nav-settings-btn active-settings-BTN">COMPTES</div>
-            <div id="java" class="nav-settings-btn">JAVA</div>
-            <div id="resolution" class="nav-settings-btn">RESOLUTION</div>
-            <div id="launcher" class="nav-settings-btn">LAUNCHER</div>
-            <div id="save" class="nav-settings-btn">ACCUEIL</div>
+            <div id="account" class="nav-settings-btn active-settings-BTN">Authentification</div>
+            <div id="java" class="nav-settings-btn">Exécution</div>
+            <div id="resolution" class="nav-settings-btn">Résolution</div>
+            <div id="launcher" class="nav-settings-btn">Lanceur</div>
+            <div id="save" class="nav-settings-btn">Retour</div>
         </div>
     </div>
 
     <div id="account-tab" class="container-settings active-container-settings">
-        <div class="titre-tab">Comptes joueurs</div>
+        <div class="titre-tab">Liste des comptes</div>
 
         <div class="accounts-list content-scroll">
             <div class="account" id="add">
@@ -27,8 +27,7 @@
         <div class="titre-tab">Paramètre de votre RAM</div>
         <div class="settings-elements-box">
             <div class="setting-text">
-                Définition de la RAM alloué à votre jeu, une quantité plus important augmenteras les performances de
-                votre jeu.<br>
+                L'allocation de la RAM <br>
                 A noter qu'il faut éviter de mettre une trop grande quantité sinon cela peut provoquer des pertes de
                 performances sur vos autres applications.<br><br>
                 <b>-RAM Maximale:</b> Indique la quantité totale de RAM allouée à votre jeu. Il est recommandé de ne pas
@@ -49,8 +48,8 @@
                     </div>
                 </div>
                 <div class="ram-info-block">
-                    <b>Vous possédez un total de <span id="total-ram">0 Go</span> RAM.</b><br>
-                    <b>Vous possédez un total de <span id="free-ram">0 Go</span> RAM disponible.</b>
+                    <b>Total: <span id="total-ram">0 Go</span> RAM.</b><br>
+                    <b>Disponible: <span id="free-ram">0 Go</span> RAM.</b>
                 </div>
             </div>
         </div>
@@ -58,29 +57,29 @@
         <div class="titre-tab">Emplacement de Java</div>
         <div class="settings-elements-box">
             <div class="setting-text">
-                Le launcher utilise une version embarquée de Java.<br>
-                Cette version est disponible dans le répertoire :<br><span class="java-path-txt"></span><br>
-                Toutefois, vous pouvez spécifier votre propre exécutable si votre jeu requiert une version de java plus
-                recente.
+                Le lanceur fournit une version de java embarqué par défaut.<br>
+                Elle est installé dans le répertoire :<br><span class="java-path-txt"></span><br>
+                Néanmoins, si votre instance de jeu requiert une version différente de java de celle déja présente,
+                vous pouvez modifier la version ci-dessous:
             </div>
             <div class="settings-elements content-evenly">
                 <input type="text" class="java-path-input-text" disabled>
                 <input type="file" class="java-path-input-file" accept="application/octet-stream" />
                 <div class="java-path-box">
                     <div class="java-path-set java-path-btn">Changer</div>
-                    <div class="java-path-reset java-path-btn">Par defaut</div>
+                    <div class="java-path-reset java-path-btn">Réinitialiser</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="resolution-tab" class="container-settings">
-        <div class="titre-tab">Paramètres de resolution Minecraft</div>
+        <div class="titre-tab">Résolution de votre jeu</div>
         <div class="settings-elements-box">
             <div class="setting-text">
                 Définissez une résolution personnalisée afin d'avoir un jeu adapté à votre écran.<br>
-                Par défaut le jeu démarre en 854 X 480,<br>vous pouvez modifier cette valeur pour un confort de jeu
-                optimal. La résolution idéale est de 1280 X 720.
+                Par défaut le jeu démarre en 854 X 480,<br>vous pouvez modifier cette valeur en fonction de votre besoin.
+                La résolution idéale est de 1280 X 720.
             </div>
             <div class="settings-elements content-center">
                 <div class="input-size-element">
@@ -88,49 +87,49 @@
                     <div class="size-cross"></div>
                     <input type="number" class="height-size input-resolution">
                 </div>
-                <div class="size-reset size-btn">Par defaut</div>
+                <div class="size-reset size-btn">Réinitialiser</div>
             </div>
         </div>
     </div>
 
     <div id="launcher-tab" class="container-settings content-scroll">
-        <div class="titre-tab">Paramètre de téléchargement</div>
+        <div class="titre-tab">Téléchargement</div>
         <div class="settings-elements-box">
             <div class="setting-text">
-                Ce paramètre détermine le nombre maximum de fichiers pouvant être téléchargés simultanément lors de la
-                mise à jour ou du téléchargement de ressources.<br><br>
+                Ce paramètre détermine le nombre maximum de fichiers pouvant être téléchargés en simultané lors d'un téléchargement
+                quelconque du lanceur.<br><br>
 
-                Veuillez noter que la modification de ce paramètre peut affecter les performances de
+                Veuillez noter que la modification de ce paramètre peut affecter la vitesse de
                 téléchargement.<br>
-                Il est recommandé de ne pas dépasser les limites recommandées par défaut,<br>
+                Il est recommandé de ne pas dépasser les limites recommandées par défaut<br>
                 sauf si vous rencontrez des problèmes spécifiques de connectivité.
             </div>
             <div class="settings-elements content-center">
                 <input type="number" class="max-files input-max-files">
-                <p>Fichiers</p>
-                <div class="max-files-reset max-files-btn">Par defaut</div>
+                <p>Fichiers simultané(s)</p>
+                <div class="max-files-reset max-files-btn">Réinitialiser</div>
             </div>
         </div>
 
-        <div class="titre-tab">Thème clair et sombre</div>
+        <div class="titre-tab">Apparence</div>
         <div class="settings-elements-box">
             <div class="setting-text">
-                Choisissez entre le thème clair et le thème sombre pour personnaliser l'apparence du launcher.<br><br>
+                Choisissez le thème désiré pour changer l'apparence du lanceur.<br><br>
 
                 La modification du thème peut influencer la lisibilité et l'expérience visuelle.<br>
                 Sélectionnez celui qui vous convient le mieux en fonction de vos préférences.
             </div>
             <div class="settings-elements content-center theme-box">
-                <div class="theme-btn theme-btn-clair">Clair</div>
-                <div class="theme-btn theme-btn-sombre">Sombre</div>
-                <div class="theme-btn theme-btn-auto">Automatique</div>
+                <div class="theme-btn theme-btn-clair">Thème clair</div>
+                <div class="theme-btn theme-btn-sombre">Thème sombre</div>
+                <div class="theme-btn theme-btn-auto">Synchroniser avec le système</div>
             </div>
         </div>
 
-        <div class="titre-tab">Comportement du launcher au démarrage</div>
+        <div class="titre-tab">Démarrage</div>
         <div class="settings-elements-box">
             <div class="setting-text">
-                Vous pouvez choisir si le launcher se ferme automatiquement ou reste ouvert lorsque vous lancez le jeu.
+                Après le lancement du jeu:
             </div>
 
             <div class="settings-elements content-evenly close-box">
