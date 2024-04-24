@@ -12,8 +12,7 @@
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
-        "build": "node build.js --obf=false --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/craft-launch/PokeMoonX-Launcher/master/src/assets/images/icon.png"
+        "build": "node build.js --obf=false --build=platform"
     },
     "license": "CCANC",
     "nodemonConfig": {
